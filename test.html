@@ -4,7 +4,7 @@
     <title>Test</title>
     <script language="JavaScript" src="assets/js/cabc_utility.js"></script>
     <script language="JavaScript" src="assets/js/31map.js"></script>
-    <script id="cs_js" type="text/javascript" src="javascript/31data.js" charset="UTF-8"></script>
+    <!-- <script id="cs_js" type="text/javascript" src="javascript/31data.js" charset="UTF-8"></script> -->
 
     <style>
         * {
@@ -137,7 +137,7 @@
                         <input type="hidden" name="cs_pid" value="">
                         <input type="hidden" name="cs_row" value="">
                         <img id="map_1" src="images/31Alls.jpg" border="0" usemap="#Map" width="1600" height="4037"  style="cursor: text;">
-                        <div id="20191119160945" onmouseover="processingMenu('20191119160945',new Array(3536,132),this);" onmouseout="onMouseOutChoice();" style="display: none; position: absolute; top: 3506px; left: 127px; background: url(images/go.png) no-repeat; width: 31px; height: 32px;"></div>
+                        <!-- <div id="20191119160945" onmouseover="processingMenu('20191119160945',new Array(3536,132),this);" onmouseout="onMouseOutChoice();" style="display: none; position: absolute; top: 3506px; left: 127px; background: url(images/go.png) no-repeat; width: 31px; height: 32px;"></div>
                         <div id="20191119160543" onmouseover="processingMenu('20191119160543',new Array(3536,107),this);" onmouseout="onMouseOutChoice();" style="display: none; position: absolute; top: 3506px; left: 102px; background: url(images/go.png) no-repeat; width: 31px; height: 32px;"></div>
                         <div id="20191107091033" onmouseover="processingMenu('20191107091033',new Array(942,459),this);" onmouseout="onMouseOutChoice();" style="display: none; position: absolute; top: 902px; left: 454px; background: url(images/go.png) no-repeat; width: 31px; height: 32px;"></div>
                         <div id="20191101190551" onmouseover="processingMenu('20191101190551',new Array(2662,960),this);" onmouseout="onMouseOutChoice();" style="display: none; position: absolute; top: 2620px; left: 955px; background: url(images/go.png) no-repeat; width: 31px; height: 32px;"></div>
@@ -697,7 +697,7 @@
                             </div>
                             <div id="com_product" onclick="document.all.com_choice.style.display='none';" class="hitbox">
                                 產品名稱
-                            </div>
+                            </div> -->
                         </div>
                         <div id="divStayTopLeft" class="divStayTopLeft" style="left: 1px; top: 1px;">
                             <div id="going_origin" onclick="scrollTo(0,0); document.all.going_origin.style.visibility='hidden';" style="visibility: hidden; cursor: hand;">
@@ -706,7 +706,7 @@
     </form>
     <!--展場map座標-->
     <map name="Map" id="Map" style="height: 0px">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1352,3514,1500,3562" alt="" onmouseover="showChoiceMenu('20190829192237',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1352,3514,1500,3562" alt="" onmouseover="showChoiceMenu('20190829192237',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1053,2841,1102,2892" alt="" onmouseover="showChoiceMenu('20190902095619',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="560,2797,600,2811" alt="" onmouseover="showChoiceMenu('20190902134621',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="587,773,760,823" alt="" onmouseover="showChoiceMenu('20190903121520',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -770,9 +770,9 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="887,1072,938,1097" alt="" onmouseover="showChoiceMenu('20190927100655',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="182,2691,207,2717" alt="" onmouseover="showChoiceMenu('20190927105016',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="183,3439,233,3461" alt="" onmouseover="showChoiceMenu('20190930105814',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="959,3295,1022,3331" alt="" onmouseover="showChoiceMenu('20190930120048',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="889,523,989,573" alt="" onmouseover="showChoiceMenu('20190930122848',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1351,3288,1401,3337" alt="" onmouseover="showChoiceMenu('20191001104904',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="959,3295,1022,3331" alt="" onmouseover="showChoiceMenu('20190930120048',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20190930122848);" coords="889,523,989,573" alt="" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1351,3288,1401,3337" alt="" onmouseover="showChoiceMenu('20191001104904',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="54,646,80,696" alt="" onmouseover="showChoiceMenu('20191001152148',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1401,3314,1450,3340" alt="" onmouseover="showChoiceMenu('20191001154013',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="455,3513,528,3560" alt="" onmouseover="showChoiceMenu('20191001161546',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -880,9 +880,9 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="464,1121,514,1146" alt="" onmouseover="showChoiceMenu('20191015142709',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="465,924,510,944" alt="" onmouseover="showChoiceMenu('20191015144100',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="587,524,611,571" alt="" onmouseover="showChoiceMenu('20191015144353',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="189,1121,262,1170" alt="" onmouseover="showChoiceMenu('20191015144638',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="813,673,988,722" alt="" onmouseover="showChoiceMenu('20191015144921',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="663,449,762,497" alt="" onmouseover="showChoiceMenu('20191015145110',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="189,1121,262,1170" alt="" onmouseover="showChoiceMenu('20191015144638',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20191015144921);" coords="813,673,988,722" alt="" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="663,449,762,497" alt="" onmouseover="showChoiceMenu('20191015145110',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="59,3450,84,3500" alt="" onmouseover="showChoiceMenu('20191015145526',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1370,629,1433,641" alt="" onmouseover="showChoiceMenu('20191015151614',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1458,3096,1495,3133" alt="" onmouseover="showChoiceMenu('20191015153158',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -1097,10 +1097,10 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1238,599,1362,648" alt="" onmouseover="showChoiceMenu('20191101190307',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1525,3371,1550,3420" alt="" onmouseover="showChoiceMenu('20191101190308',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="431,3290,479,3337" alt="" onmouseover="showChoiceMenu('20191101190309',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="863,1072,889,1090" alt="" onmouseover="showChoiceMenu('20191101190310',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1523,899,1547,948" alt="" onmouseover="showChoiceMenu('20191101190311',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="187,448,288,497" alt="" onmouseover="showChoiceMenu('20191101190312',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="587,323,636,349" alt="" onmouseover="showChoiceMenu('20191101190313',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="863,1072,889,1090" alt="" onmouseover="showChoiceMenu('20191101190310',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> --> -->
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1523,899,1547,948" alt="" onmouseover="showChoiceMenu('20191101190311',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20191101190312);" coords="187,448,288,497" alt="" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="587,323,636,349" alt="" onmouseover="showChoiceMenu('20191101190313',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="661,323,688,349" alt="" onmouseover="showChoiceMenu('20191101190314',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1439,774,1486,822" alt="" onmouseover="showChoiceMenu('20191101190315',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1052,2691,1101,2741" alt="" onmouseover="showChoiceMenu('20191101190316',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -1119,9 +1119,9 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="439,1123,462,1145" alt="" onmouseover="showChoiceMenu('20191101190329',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1054,3166,1079,3215" alt="" onmouseover="showChoiceMenu('20191101190330',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="59,2771,83,2821" alt="" onmouseover="showChoiceMenu('20191101190331',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="190,374,263,423" alt="" onmouseover="showChoiceMenu('20191101190332',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="612,522,760,573" alt="" onmouseover="showChoiceMenu('20191101190333',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="606,3364,779,3414" alt="" onmouseover="showChoiceMenu('20191101190334',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="190,374,263,423" alt="" onmouseover="showChoiceMenu('20191101190332',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20191101190333);" coords="612,522,760,573" alt="" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="606,3364,779,3414" alt="" onmouseover="showChoiceMenu('20191101190334',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="431,2693,481,2716" alt="" onmouseover="showChoiceMenu('20191101190335',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="59,2906,82,2930" alt="" onmouseover="showChoiceMenu('20191101190336',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="158,3092,305,3139" alt="" onmouseover="showChoiceMenu('20191101190337',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -1183,10 +1183,10 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="889,942,914,996" alt="" onmouseover="showChoiceMenu('20191101190433',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="829,3239,978,3265" alt="" onmouseover="showChoiceMenu('20191101190434',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1523,622,1548,696" alt="" onmouseover="showChoiceMenu('20191101190435',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="914,923,937,946" alt="" onmouseover="showChoiceMenu('20191101190436',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="914,973,938,1021" alt="" onmouseover="showChoiceMenu('20191101190437',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="613,374,761,424" alt="" onmouseover="showChoiceMenu('20191101190438',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="207,2641,231,2667" alt="" onmouseover="showChoiceMenu('20191101190439',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="914,923,937,946" alt="" onmouseover="showChoiceMenu('20191101190436',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="914,973,938,1021" alt="" onmouseover="showChoiceMenu('20191101190437',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20191101190438);" coords="613,374,761,424" alt="" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="207,2641,231,2667" alt="" onmouseover="showChoiceMenu('20191101190439',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="60,2722,84,2744" alt="" onmouseover="showChoiceMenu('20191101190440',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1452,2841,1501,2891" alt="" onmouseover="showChoiceMenu('20191101190441',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="139,399,183,422" alt="" onmouseover="showChoiceMenu('20191101190443',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -1251,14 +1251,14 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="395,404,409,417" alt="" onmouseover="showChoiceMenu('20191101190544',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="411,2723,426,2736" alt="" onmouseover="showChoiceMenu('20191101190545',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="187,3368,227,3383" alt="" onmouseover="showChoiceMenu('20191101190546',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1044,927,1060,942" alt="" onmouseover="showChoiceMenu('20191101190547',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="161,3368,177,3382" alt="" onmouseover="showChoiceMenu('20191101190548',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="345,302,509,343" alt="" onmouseover="showChoiceMenu('20191101190549',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="835,2624,949,2663" alt="" onmouseover="showChoiceMenu('20191101190550',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="960,2625,1024,2662" alt="" onmouseover="showChoiceMenu('20191101190551',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1044,927,1060,942" alt="" onmouseover="showChoiceMenu('20191101190547',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> --> -->
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="161,3368,177,3382" alt="" onmouseover="showChoiceMenu('20191101190548',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20191101190549);" coords="345,302,509,343" alt="" href="javascript:get_company(cs_form.map_id.value);">
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="835,2624,949,2663" alt="" onmouseover="showChoiceMenu('20191101190550',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
+        <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="960,2625,1024,2662" alt="" onmouseover="showChoiceMenu('20191101190551',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="459,907,504,942" alt="" onmouseover="showChoiceMenu('20191107091033',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="107,3511,132,3536" alt="" onmouseover="showChoiceMenu('20191119160543',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
-        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="132,3511,156,3536" alt="" onmouseover="showChoiceMenu('20191119160945',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
+        <area shape="rect" onclick="javascript:get_result1(dialog);" coords="132,3511,156,3536" alt="" onmouseover="showChoiceMenu('20191119160945',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> --> -->
     </map>
     </div>
 </div>                 

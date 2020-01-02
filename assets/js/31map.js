@@ -340,6 +340,7 @@ function get_result1(id_no){
 
 //滑鼠點擊
 function get_company(id_no){
+  //alert("視窗內之文字");
 	cs_present = FunSQL_ID(id_no);
 	cs_record = 0;
 	document.cs_form.cs_id.value = cs_present[cs_record][4];
