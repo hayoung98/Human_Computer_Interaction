@@ -67,9 +67,28 @@
             line-height: 14px
         }
 
-            #star-info strong, #star-span strong {
-                color: red;
-            }
+        #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+
+        #customers tr:nth-child{background-color: #b34a7e;}
+
+        /* #customers tr:hover {background-color: #ddd;} */
+
+        #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: black;
+        }
     </style>
     <link href="floorplan.css" rel="stylesheet" type="assets/css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -124,7 +143,7 @@
             <p class="animated fadeInLeft">來訪觀眾：憑名片或填寫問卷免費換參觀證入場。</p>
         </div>
     </div>
-   
+
     <div id="menu-2" align="center">
         <div id="dialog" class="star">
     <h2>點擊星星打分:</h2>
@@ -132,6 +151,142 @@
     <span id="star-span"></span>
     <p id="star-info"></p>
   </div>
+
+<div id="20191101190549" style="display: none;">
+    <table id="customers">
+        <tr>
+            <th>時程</th>
+            <th>活動名稱</th>
+            <th>相關品項</th>
+        </tr>
+        <tr>
+            <td>11:00 ~ 11:30</td>
+            <td>早鳥優惠</td>
+            <td>指定商品下殺八折起</td>
+        </tr>
+        <tr>
+            <td>13:30 ~ 14:00</td>
+            <td>抽獎</td>
+            <td>IPad Pro</td>
+        </tr>
+        <tr>
+            <td>16:00 ~ 17:00</td>
+            <td>抽獎</td>
+            <td>IPhone11 Pro</td>
+        </tr>
+        </table>
+    </div>
+
+<div id="20191101190438" style="display: none;">
+    <table id="customers">
+    <tr>
+        <th>時程</th>
+        <th>活動名稱</th>
+        <th>相關品項</th>
+    </tr>
+    <tr>
+        <td>12:00 ~ 12:30</td>
+        <td>互動小遊戲</td>
+        <td>50吋液晶電視</td>
+    </tr>
+    <tr>
+        <td>13:30 ~ 14:00</td>
+        <td>抽獎</td>
+        <td>IPad Pro</td>
+    </tr>
+    </table>
+    </div>
+
+<div id="20191101190312" style="display: none;">
+    <table id="customers">
+    <tr>
+        <th>時程</th>
+        <th>活動名稱</th>
+        <th>相關品項</th>
+    </tr>
+    <tr>
+        <td>10:30 ~ 11:00</td>
+        <td>早鳥優惠</td>
+        <td>指定商品5折起</td>
+    </tr>
+    <tr>
+        <td>14:00 ~ 15:00</td>
+        <td>闖關遊戲</td>
+        <td>小米手環</td>
+    </tr>
+    <tr>
+        <td>16:00 ~ 17:00</td>
+        <td>抽獎</td>
+        <td>IPhone11 Pro</td>
+    </tr>
+    </table>
+    </div>
+
+<div id="20191101190333" style="display: none;">
+    <table id="customers">
+    <tr>
+        <th>時程</th>
+        <th>活動名稱</th>
+        <th>相關品項</th>
+    </tr>
+    <tr>
+        <td>13:30 ~ 14:00</td>
+        <td>知名藝人到場</td>
+        <td>IPhone11 Pro</td>
+    </tr>
+    <tr>
+        <td>13:30 ~ 14:00</td>
+        <td>抽獎</td>
+        <td>IPad Pro</td>
+    </tr>
+    </table>
+    </div>
+
+<div id="20190930122848" style="display: none;">
+    <table id="customers">
+    <tr>
+        <th>時程</th>
+        <th>活動名稱</th>
+        <th>相關品項</th>
+    </tr>
+    <tr>
+        <td>10:30 ~ 11:00</td>
+        <td>抽獎</td>
+        <td>華維手機</td>
+    </tr>
+    <tr>
+        <td>13:30 ~ 14:00</td>
+        <td>抽獎</td>
+        <td>Air Pods2</td>
+    </tr>
+    </table>
+    </div>
+
+    <div id="20191015144921" style="display: none;">
+    <table id="customers">
+    <tr>
+        <th>時程</th>
+        <th>活動名稱</th>
+        <th>相關品項</th>
+    </tr>
+    <tr>
+        <td>10:30 ~ 11:00</td>
+        <td>早鳥優惠</td>
+        <td>指定商品5折起</td>
+    </tr>
+    <tr>
+        <td>13:30 ~ 14:00</td>
+        <td>抽獎</td>
+        <td>大同電鍋</td>
+    </tr>
+    <tr>
+        <td>16:00 ~ 17:00</td>
+        <td>抽獎</td>
+        <td>IPhone11 Pro</td>
+    </tr>
+    </table>
+    </div>
+
     <form name="cs_form" style="visibility: visible;" >
                         <input type="hidden" name="cs_id" value="">
                         <input type="hidden" name="cs_pid" value="">
@@ -1254,6 +1409,7 @@
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="1044,927,1060,942" alt="" onmouseover="showChoiceMenu('20191101190547',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> --> -->
         <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="161,3368,177,3382" alt="" onmouseover="showChoiceMenu('20191101190548',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
         <area shape="rect" onclick="javascript:get_result1(dialog);get_company(20191101190549);" coords="345,302,509,343" alt="" href="javascript:get_company(cs_form.map_id.value);">
+
         <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="835,2624,949,2663" alt="" onmouseover="showChoiceMenu('20191101190550',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);"> -->
         <!-- <area shape="rect" onclick="javascript:get_result1(dialog);" coords="960,2625,1024,2662" alt="" onmouseover="showChoiceMenu('20191101190551',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
         <area shape="rect" onclick="javascript:get_result1(dialog);" coords="459,907,504,942" alt="" onmouseover="showChoiceMenu('20191107091033',this);" onmouseout="onMouseOutChoice();" href="javascript:get_company(cs_form.map_id.value);">
@@ -1271,6 +1427,7 @@
 
         JSFX_FloatTopDiv("divStayTopLeft");
         makingPoints(document.all.map_1, "AfterEnd");
+        
 
     </script>
     <span class="border-top"></span>

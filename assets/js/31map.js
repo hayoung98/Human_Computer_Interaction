@@ -1,8 +1,9 @@
 window.onscroll = function(){
 
 	if (document.all.going_origin){
-		document.all.going_origin.style.visibility = "visible";
-	}
+    document.all.going_origin.style.visibility = "visible";
+  }
+
 };
 
 function makingPoints(tagObj, pos){
@@ -338,16 +339,24 @@ function get_result1(id_no){
       sufuStar.star();
 }
 
+
 //滑鼠點擊
 function get_company(id_no){
   //alert("視窗內之文字");
+  var company_1_el=document.getElementById(id_no);
+  if(company_1_el.style.display=='none')
+   company_1_el.style.display='block';
+  else 
+    company_1_el.style.display='none';
+
 	cs_present = FunSQL_ID(id_no);
 	cs_record = 0;
 	document.cs_form.cs_id.value = cs_present[cs_record][4];
 	document.cs_form.cs_row.value = cs_record;
 	var PopID;
 	PopID = window.open('companyDate.php?cseq=' + id_no + '&cyear=31' + '');
-	PopID.focus();
+  PopID.focus();
+
 }
 
 function GoProductByPID(id_no, pid){
